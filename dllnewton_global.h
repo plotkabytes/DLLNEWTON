@@ -1,0 +1,12 @@
+#ifndef DLLNEWTON_GLOBAL_H
+#define DLLNEWTON_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(DLLNEWTON_LIBRARY)
+#  define DLLNEWTONSHARED_EXPORT Q_DECL_EXPORT
+#else
+#  define DLLNEWTONSHARED_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // DLLNEWTON_GLOBAL_H
