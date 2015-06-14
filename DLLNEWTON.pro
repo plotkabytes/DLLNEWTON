@@ -18,11 +18,6 @@ HEADERS += dllnewton.h\
         dllnewton_global.h \
         intervalarithmetic.h
 
-unix {
-    target.path = /usr/lib
-    INSTALLS += target
-}
-
 # compiler flags
 CXXFLAGS+="c++11"
 
